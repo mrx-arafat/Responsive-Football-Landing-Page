@@ -155,6 +155,7 @@ header {
 /* bottom banner */
 .bottom-banner {
   margin-top: 150px;
+  margin-bottom: 150px;
 }
 .bottom-head {
   font-weight: bold;
@@ -186,7 +187,7 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 100px 475px;
+  margin: 100px 475px 40px 475px;
 }
 .footer-image {
   margin-right: 30px;
@@ -203,6 +204,7 @@ header {
   font-size: 17px;
   font-weight: 500;
   background-color: #e7e7e8;
+  cursor: pointer;
 }
 .copyright p {
   font-size: 18px;

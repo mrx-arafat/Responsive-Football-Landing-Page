@@ -36,6 +36,12 @@ header {
   margin-right: 36px;
   text-decoration: none;
 }
+
+.nav-menu a:hover {
+  color: #e02c6d;
+  transition: 0.3s ease-out;
+  transform: translateY(-4px);
+}
 /* button */
 .btn {
   padding: 10px 15px;
@@ -50,6 +56,7 @@ header {
 
   transform: translateY(-5px);
 }
+
 .btn a {
   text-decoration: none;
   font-weight: 500;
@@ -62,6 +69,7 @@ header {
 .btn:hover a {
   color: #e41d66;
 }
+
 /*  banner */
 .top-banner,
 .bottom-banner {
@@ -86,6 +94,25 @@ header {
 }
 .right img {
   width: 100%;
+}
+.top-banner img:hover {
+  animation: ani 1s ease-out;
+}
+/* heading animation */
+@keyframes ani {
+  0% {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+
+  80% {
+    transform: translateX(10px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
 }
 
 /* player card */
@@ -151,7 +178,7 @@ header {
 .bottom-right {
   width: 50%;
 }
-.bottom-right img {
+.bottom-banner .right img {
   width: 80%;
 }
 
@@ -184,4 +211,60 @@ header {
   line-height: 24px;
   font-weight: 500;
   color: #000000;
+}
+/* --------------
+    MediaQuery
+--------------- */
+@media (max-width: 768px) {
+  .navbar {
+    display: none;
+  }
+  .left,
+  .right {
+    margin: 0 50px 50px 50px;
+  }
+  .top-banner {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .top-banner img {
+    width: 130%;
+  }
+  /* player info */
+  .container {
+    margin: 80px 10px;
+  }
+  .bottom-banner {
+    display: flex;
+    flex-direction: column;
+  }
+  .bottom-banner .left {
+    margin: 50px 15px;
+  }
+  .bottom-banner p {
+    width: 100%;}
+
+  .bottom-banner .right {
+    width: 75%;
+  }
+
+  .bottom-banner .right img {
+    width: 100%;
+  }
+  /* footer */
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+  }
+  .footer-image {
+   
+    width: 100%;
+  }
+  .footer-container img{
+    width
+  }
 }

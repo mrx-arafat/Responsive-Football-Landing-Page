@@ -61,8 +61,9 @@ header {
 .btn:hover a {
   color: #e41d66;
 }
-/* header banner */
-.top-banner {
+/*  banner */
+.top-banner,
+.bottom-banner {
   border: 2px solid red;
   display: flex;
   align-items: center;
@@ -124,4 +125,28 @@ header {
   font-feature-settings: "liga" off;
 
   color: #6c6c6c;
+}
+/* bottom banner */
+
+.bottom-head {
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 60px;
+  color: black;
+}
+
+.bottom-banner p {
+  width: 85%;
+  text-align: left;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 28px;
+  color: #6c6c6c;
+  margin-bottom: 40px;
+}
+.bottom-right {
+  width: 50%;
+}
+.bottom-right img {
+  width: 80%;
 }

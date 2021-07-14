@@ -16,6 +16,7 @@ header {
   padding: 30px 140px;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 40px;
 }
 
 .nav-menu ul {
@@ -90,7 +91,7 @@ header {
   width: 50%;
 }
 .right img {
-  width: 100%;
+  width: 80%;
 }
 .top-banner img:hover {
   animation: ani 1s ease-out;

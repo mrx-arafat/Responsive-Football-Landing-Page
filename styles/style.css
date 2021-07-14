@@ -12,7 +12,7 @@ header {
 /* nav-menu bar */
 .navbar {
   display: flex;
-  border: 1.5px solid black;
+
   padding: 30px 140px;
   justify-content: space-between;
   align-items: center;
@@ -73,12 +73,10 @@ header {
 /*  banner */
 .top-banner,
 .bottom-banner {
-  border: 2px solid red;
   display: flex;
   align-items: center;
 }
 .left {
-  border: 2px solid yellow;
   flex-basis: 50%;
   margin-left: 155px;
 }
@@ -89,7 +87,6 @@ header {
   color: #ffffff;
 }
 .right {
-  border: 2px solid green;
   width: 50%;
 }
 .right img {
@@ -120,7 +117,7 @@ header {
 .container {
   margin: 80px 180px;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   grid-template-rows: repeat(4, 456px);
   grid-auto-rows: 460px;
   grid-row-gap: 50px;
@@ -162,7 +159,7 @@ header {
   font-weight: bold;
   font-size: 48px;
   line-height: 60px;
-  color: black;
+  color: #ee3176;
 }
 
 .bottom-banner p {
@@ -215,6 +212,10 @@ header {
 /* --------------
     MediaQuery
 --------------- */
+/*------------
+ mobile responsive (iPhone 7-12)
+ ---------------- */
+
 @media (max-width: 768px) {
   .navbar {
     display: none;
@@ -233,17 +234,18 @@ header {
   }
   /* player info */
   .container {
-    margin: 80px 10px;
+    margin: 80px 10px 0px 10px;
   }
   .bottom-banner {
     display: flex;
     flex-direction: column;
   }
   .bottom-banner .left {
-    margin: 50px 15px;
+    margin: 50px 20px;
   }
   .bottom-banner p {
-    width: 100%;}
+    width: 100%;
+  }
 
   .bottom-banner .right {
     width: 75%;
@@ -261,10 +263,69 @@ header {
     margin: 10px;
   }
   .footer-image {
-   
     width: 100%;
   }
-  .footer-container img{
-    width
+  .footer-container img {
+    width: 100%;
+  }
+}
+
+/* --------------- 
+        tablet
+-------------------- */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .navbar {
+    display: none;
+  }
+  .left,
+  .right {
+    margin: 100px 100px 50px 100px;
+  }
+  .top-banner {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+  }
+  .top-banner img {
+    width: 130%;
+  }
+  /* player info */
+  .container {
+    margin: 100px 10px;
+  }
+
+  .bottom-banner {
+    display: flex;
+    flex-direction: column;
+  }
+  .bottom-banner .left {
+    margin: 50px 80px;
+  }
+  .bottom-banner p {
+    width: 100%;
+  }
+
+  .bottom-banner .right {
+    width: 60%;
+  }
+
+  .bottom-banner .right img {
+    width: 100%;
+  }
+  /* footer */
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+  }
+  .footer-image {
+    width: 70%;
+  }
+  .footer-container img {
+    width: 100%;
   }
 }

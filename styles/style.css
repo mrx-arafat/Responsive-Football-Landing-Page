@@ -17,9 +17,7 @@ header {
   justify-content: space-between;
   align-items: center;
 }
-.nav-menu {
-  margin-right: ;
-}
+
 .nav-menu ul {
   display: flex;
   list-style: none;
@@ -38,20 +36,30 @@ header {
   margin-right: 36px;
   text-decoration: none;
 }
-
+/* button */
 .btn {
   padding: 10px 15px;
   border-radius: 5px;
   background-color: #e02c6d;
 }
+.btn:hover {
+  cursor: pointer;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+
+  transform: translateY(-5px);
+}
 .btn a {
   text-decoration: none;
-  font-weight: 500;
+  font-weight: 550;
   font-size: 16px;
 
   text-align: center;
   letter-spacing: 2px;
   color: #ffffff;
+}
+.btn:hover a {
+  color: #e41d66;
 }
 /* header banner */
 .top-banner {
@@ -79,3 +87,41 @@ header {
 }
 
 /* player card */
+
+.container {
+  margin: 100px 180px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  grid-template-rows: repeat(4, 456px);
+  grid-auto-rows: 460px;
+  grid-row-gap: 50px;
+}
+.player-info {
+  width: 330px;
+  height: 456px;
+  padding: 15px;
+
+  background-color: white;
+  border-radius: 5px;
+
+  box-shadow: 0.2rem 0.2rem 2rem rgba(158, 155, 153, 0.397);
+}
+
+.player-info img {
+  width: 100%;
+}
+.player-info h1 {
+  font-weight: 800;
+  font-size: 28px;
+  line-height: 40px;
+  margin: 10px 0px;
+}
+
+.player-info p {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 26px;
+  font-feature-settings: "liga" off;
+
+  color: #6c6c6c;
+}

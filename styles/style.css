@@ -39,19 +39,20 @@ header {
 /* button */
 .btn {
   padding: 10px 15px;
-  border-radius: 5px;
+  border-radius: 4px;
   background-color: #e02c6d;
 }
 .btn:hover {
   cursor: pointer;
+  border: 1.5px solid #e41d66;
   background-color: rgb(255, 255, 255);
-  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+  box-shadow: 0px 15px 20px rgba(46, 186, 229, 0.4);
 
   transform: translateY(-5px);
 }
 .btn a {
   text-decoration: none;
-  font-weight: 550;
+  font-weight: 500;
   font-size: 16px;
 
   text-align: center;
@@ -90,7 +91,7 @@ header {
 /* player card */
 
 .container {
-  margin: 100px 180px;
+  margin: 80px 180px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
   grid-template-rows: repeat(4, 456px);
@@ -127,7 +128,9 @@ header {
   color: #6c6c6c;
 }
 /* bottom banner */
-
+.bottom-banner {
+  margin-top: 150px;
+}
 .bottom-head {
   font-weight: bold;
   font-size: 48px;
@@ -142,6 +145,7 @@ header {
   font-size: 16px;
   line-height: 28px;
   color: #6c6c6c;
+
   margin-bottom: 40px;
 }
 .bottom-right {
@@ -149,4 +153,35 @@ header {
 }
 .bottom-right img {
   width: 80%;
+}
+
+/* footer */
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 100px 475px;
+}
+.footer-image {
+  margin-right: 30px;
+  width: 483px;
+}
+.footer-image img {
+  width: 100%;
+}
+.social-icon i {
+  color: #969bab;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 50%;
+  font-size: 17px;
+  font-weight: 500;
+  background-color: #e7e7e8;
+}
+.copyright p {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 500;
+  color: #000000;
 }
